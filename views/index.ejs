@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> API Fetch </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HODLINFO</a>
+          <a class="navbar-brand com" href="#">.com</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <div class="smallOne1">
+              <li class="nav-item">
+                <button type="button" class="nav-link btn btn-secondary btn-sm dropdown-toggle smallOne">INR  </button>
+              </li>
+            </div>
+              <li class="nav-item">
+                <button type="button" class="nav-link btn btn-secondary btn-sm dropdown-toggle smallOne">BTC  </button>
+              </li>
+              <li class="nav-item telegram1">
+                <button type="button" class="nav-link btn btn-primary btn-sm telegram"><i class="fa fa-telegram"></i> Connect Telegram</button>
+              </li>
+              <li class="nav-item toggle">
+                <form>
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="switch1">
+                      <label class="custom-control-label" for="switch1"></label>
+                    </div>
+                  </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <p class="paragraph"> Powered by <em>Finstreet</em></p>
+
+      <br>
+    <div class="container">
+        <div class="card above-one">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        #
+                    </div>
+                    <div class="col">
+                        name
+                    </div>
+                    <div class="col">
+                        Last
+                    </div>
+                    <div class="col">
+                        Buy/Sell Price
+                    </div>
+                    <div class="col">
+                        Volume
+                    </div>
+                    <div class="col">
+                        base_unit
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    
+    <% let count = 1 %>
+    <% tickets.forEach(ticket=> { %>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <%= count %>
+                        </div>
+                        <div class="col">
+                            <%=ticket.name%>
+                        </div>
+                        <div class="col">
+                            <span>&#8377;</span> <%=ticket.last%>
+                        </div>
+                        <div class="col">
+                            <span>&#8377;</span> <%=ticket.buy%> / <span>&#8377;</span> <%=ticket.sell%>
+                        </div>
+                        <div class="col">
+                            <%=ticket.volume%>
+                        </div>
+                        <div class="col">
+                            <%=ticket.base_unit%>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <% count = count + 1 %>
+        <% }) %>
+</body>
+
+</html>

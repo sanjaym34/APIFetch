@@ -1,0 +1,120 @@
+body {
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+.col {
+    color: white;
+}
+
+.container {
+    width: 100%;
+}
+.card {
+    background-color: #3a3f4a;
+    margin-bottom: 10px;
+    font-weight: bold;
+    overflow: hidden;
+    width: 100%;
+}
+
+.above-one {
+    background-color: black;
+    margin-bottom: 0;
+}
+
+.navbar {
+    background-color: black;
+    overflow: hidden;
+    padding-bottom: 0;
+}
+
+.navbar-brand {
+    color: #80d1c4;
+    font-size: xx-large;
+    margin-left: 350px;
+}
+
+.paragraph {
+    color: white;
+    margin-top: -5px;
+    width: 25%;
+    margin-left: 383px;
+}
+
+.paragraph em {
+    color: #80d1c4;
+}
+
+.com {
+    color: white;
+    margin-left: -12px;
+    font-size: medium;
+    padding-top: 1em;
+    padding-left: 0;
+}
+
+.nav-item {
+    background-color: #28383b;
+    margin: 10px 0 15px 15px;
+    left: 50%;
+}
+
+.smallOne {
+    background-color: black;
+    outline: none;
+    font-weight: bolder;
+    border-radius: 20%;
+}
+
+.smallOne1{
+    margin-left: 250px;
+    background-color: black;
+}
+
+.telegram1{
+    background-color: black;
+}
+
+.telegram {
+    background-color: #80d1c4;
+    color: white;
+    font-weight: bolder;
+    margin-left:350px;
+    border-radius: 5%;
+}
+
+.telegram:hover{
+    background-color: #80d1c4;
+}
+
+.fa {
+    font-size: 24px;
+    color: white;
+}
+
+.custom-control-input {
+    background-color: #3a3f4a;
+    padding-top: 1em;
+}
+
+.custom-control-label ::before {
+    background-color: white;
+    border-color: #3a3f4a;
+    padding-top: 1em;
+}
+
+.custom-control-label ::after {
+    background-color: #3a3f4a;
+    border-color: #80d1c4;
+    padding-top: 1em;
+}
+
+.toggle {
+    background-color: black;
+    padding-top: 0.5em;
+}
+
+.toggle input:checked {
+    background-color: #80d1c4;
+}
